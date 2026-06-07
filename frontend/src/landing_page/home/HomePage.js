@@ -13,10 +13,10 @@ function HomePage() {
     <>
         <Navbar />
         <Hero />
-        <Stats />
         <Awards />
-        <Education />
+        <Stats />
         <Pricing />
+        <Education />
         <OpenAccount />
         <Footer />
     </>

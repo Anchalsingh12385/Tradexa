@@ -1,22 +1,39 @@
 import React from "react";
 
-function LeftSection({ imageURL, productName, productDesription, tryDemo, learnMore, googlePlay, appStore }) {
+function LeftSection({
+  imageURL,
+  productName,
+  productDesription,
+  tryDemo,
+  learnMore,
+  googlePlay,
+  appStore,
+}) {
   return (
-    <div className="container mb-5">
-      <div className="row align-items-center">
-        <div className="col-md-6">
-          <img src={imageURL} alt={productName} className="img-fluid rounded" />
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-6">
+          <img src={imageURL} />
         </div>
-        <div className="col-md-6">
-          <h2>{productName}</h2>
+        <div className="col-6 p-5 mt-5">
+          <h1>{productName}</h1>
           <p>{productDesription}</p>
-          <div className="mt-3">
-            {learnMore && <button className="btn btn-outline-primary me-2">Learn More</button>}
-            {tryDemo && <button className="btn btn-primary">Try Demo</button>}
+          <div>
+            <a href={tryDemo}>Try Demo</a>
+            <a href={learnMore} style={{ marginLeft: "50px" }}>
+              Learn More
+            </a>
           </div>
-          <div className="mt-3 text-muted">
-            {googlePlay && <span className="me-3">Google Play</span>}
-            {appStore && <span>App Store</span>}
+          <div className="mt-3">
+            <a href={googlePlay}>
+              <img src="media/images/googlePlayBadge.svg" />
+            </a>
+            <a href={appStore}>
+              <img
+                src="media/images/appstoreBadge.svg"
+                style={{ marginLeft: "50px" }}
+              />
+            </a>
           </div>
         </div>
       </div>

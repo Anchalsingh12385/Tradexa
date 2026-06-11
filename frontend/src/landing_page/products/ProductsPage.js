@@ -5,7 +5,10 @@ import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
 
-function ProductsPage() {
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+
+function PricingPage() {
   return (
     <>
       <Hero />
@@ -21,7 +24,7 @@ function ProductsPage() {
       <RightSection
         imageURL="media/images/console.png"
         productName="Console"
-        productDesription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        productDesription="The central dashboard for your Tradexa account. Gain insights into your trades and investments with in-depth reports and visualisations."
         learnMore=""
       />
       <LeftSection
@@ -49,7 +52,7 @@ function ProductsPage() {
         appStore=""
       />
       <p className="text-center mt-5 mb-5">
-        Want to know more about our technology stack? Check out the Tradexa.tech
+        Want to know more about our technology stack? Check out the Zerodha.tech
         blog.
       </p>
       <Universe />
@@ -57,4 +60,4 @@ function ProductsPage() {
   );
 }
 
-export default ProductsPage;
+export default PricingPage;

@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
-
 //import axios from "axios";
 
-//import GeneralContext from "./GeneralContext";
+import GeneralContext from "./GeneralContext";
 
 import { Tooltip, Grow } from "@mui/material";
 
@@ -130,10 +129,10 @@ const WatchListItem = ({ stock }) => {
 };
 
 const WatchListActions = ({ uid }) => {
-  //const generalContext = useContext(GeneralContext);
+  const generalContext = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    // generalContext.openBuyWindow(uid);
+    generalContext.openBuyWindow(uid);
   };
 
   return (

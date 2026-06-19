@@ -196,6 +196,7 @@ app.get("/allPositions", async (req, res) => {
   let allPositions = await PositionsModel.find({});
   res.json(allPositions);
 });
+
 app.post("/newOrder", async (req, res) => {
   const { name, qty, price, mode } = req.body || {};
 
@@ -214,7 +215,6 @@ app.post("/newOrder", async (req, res) => {
 
   res.send("Order saved!");
 });
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

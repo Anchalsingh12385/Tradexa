@@ -8,7 +8,8 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/allHoldings").then((res) => {
+    const apiBaseUrl = import.meta.env.VITE_API_URL || "https://tradexa-backend.onrender.com";
+    axios.get(`${apiBaseUrl}/allHoldings`).then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });

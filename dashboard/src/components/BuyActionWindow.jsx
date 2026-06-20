@@ -12,7 +12,8 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = async () => {
     try {
-      await axios.post("http://localhost:3000/newOrder", {
+      const apiBaseUrl = import.meta.env.VITE_API_URL || "https://tradexa-backend.onrender.com";
+      await axios.post(`${apiBaseUrl}/newOrder`, {
         name: uid,
         qty: stockQuantity,
         price: stockPrice,

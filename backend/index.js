@@ -20,6 +20,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("Server is running successfully!");
+});
+
 // app.get("/addHoldings", async (req, res) => {
 //     let tempHoldings = [
 //         {

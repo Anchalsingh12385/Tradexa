@@ -7,6 +7,14 @@
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
+## 🔗 Deployed Links
+
+* **Live Demo / Marketing Landing Site:** [https://tradexa-73aj.onrender.com](https://tradexa-73aj.onrender.com)
+* **Trading Dashboard:** [https://tradexa-dashboardd.onrender.com](https://tradexa-dashboardd.onrender.com)
+* **Backend API:** [https://tradexa-backend.onrender.com](https://tradexa-backend.onrender.com)
+
+---
+
 Tradexa is a modern, full-stack stock trading and investment management platform. It offers an elegant public landing portal alongside a feature-rich trading dashboard resembling institutional trading platforms (e.g., Zerodha Kite). Users can search stocks, place mock orders, monitor their portfolio holdings, track short-term positions, and analyze assets using dynamic visual charts.
 
 ---
